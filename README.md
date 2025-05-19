@@ -66,10 +66,6 @@ python interface.py
 
 Digite o nome do material que deseja buscar e utilize as funcionalidades disponíveis para buscar, exportar e analisar os resultados.
 
-## Publicação no GitHub
-
-Este projeto está pronto para ser publicado no GitHub como portfólio Python. Certifique-se de não incluir o diretório `venv` no repositório.
-
 ## Licença
 
 Este projeto está licenciado sob a licença MIT.
