@@ -1,6 +1,6 @@
 # Agente IA para Cotações de Materiais
 
-Este projeto é um agente inteligente para busca e cotação de materiais de construção em diversos sites de comércio eletrônico. Ele utiliza técnicas de web scraping com Selenium, Scrapy e requests para coletar informações de preços, descrições e fornecedores, armazenando os dados em um banco SQLite.
+Este projeto é um agente inteligente para busca e cotação de materiais em diversos sites de comércio eletrônico. Ele utiliza técnicas de web scraping com Selenium, Scrapy e requests para coletar informações de preços, descrições e fornecedores, armazenando os dados em um banco SQLite.
 
 ## Funcionalidades
 
