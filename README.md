@@ -1,3 +1,5 @@
+PT/EN
+
 # Agente IA para Cotações de Materiais
 
 Este projeto é um agente inteligente para busca e cotação de materiais em diversos sites de comércio eletrônico. Ele utiliza técnicas de web scraping com Selenium, Scrapy e requests para coletar informações de preços, descrições e fornecedores, armazenando os dados em um banco SQLite.
@@ -69,3 +71,89 @@ Digite o nome do material que deseja buscar e utilize as funcionalidades dispon�
 ## Licença
 
 Este projeto está licenciado sob a licença MIT.
+
+------------------------------------------------------------
+
+AI Agent for Material Quotations
+
+This project is an intelligent agent for searching and quoting materials on various e-commerce websites. It uses web scraping techniques with Selenium, Scrapy, and requests to collect information on prices, descriptions, and suppliers, storing the data in an SQLite database.
+
+Features
+
+    Searches for materials on sites like Mercado Livre, Amazon, Shopee, Magazine Luiza, Americanas, Casas Bahia, and Google Shopping.
+
+    A graphical interface developed with PyQt6 to facilitate the search and visualization of results.
+
+    Stores the collected data in an SQLite database.
+
+    Exports results to a CSV file.
+
+    Analyzes the results via the Deepseek API (requires configured API key).
+
+    Uses proxies and user agent rotation to avoid blocks during scraping.
+
+Project Structure
+
+    main.py: Main script for basic database insertion and listing tests.
+
+    database.py: Manages the SQLite database.
+
+    interface.py: The graphical user interface with PyQt6.
+
+    selenium_scraper.py: Scraper implementation with Selenium and Scrapy.
+
+    proxy_manager.py: Manages proxies and user agents.
+
+    config.ini: Configuration file for API keys and URLs.
+
+    data/cotacoes.db: SQLite database with collected data.
+
+    chromedriver.exe: Chrome driver required for Selenium.
+
+    requirements.txt: Project dependencies.
+
+Requirements
+
+    Python 3.8 or higher
+
+    Google Chrome installed
+
+    Chromedriver compatible with the Chrome version (chromedriver.exe file included)
+
+    Python libraries listed in requirements.txt
+
+Installation
+
+    Clone the repository:
+
+    git clone <REPOSITORY_URL>
+    cd AgenteIA_Desktop
+
+    Create and activate a virtual environment:
+
+    python -m venv venv
+    venv\Scripts\activate # Windows
+    source venv/bin/activate # Linux/Mac
+
+    Install dependencies:
+
+    pip install -r requirements.txt
+
+    Configure the Deepseek API key in the config.ini file:
+    Ini, TOML
+
+    [deepseek]
+    api_key = YOUR_API_KEY
+    base_url = https://api.deepseek.com
+
+Usage
+
+Run the graphical interface:
+
+python interface.py
+
+Enter the name of the material you want to search for and use the available features to search, export, and analyze the results.
+
+License
+
+This project is licensed under the MIT license.
